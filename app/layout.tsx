@@ -1,7 +1,7 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
 const interSans = Inter({
   variable: "--font-Inter-sans",
   subsets: ["latin"],
@@ -9,7 +9,8 @@ const interSans = Inter({
 
 export const metadata: Metadata = {
   title: "DevOverflow",
-  description: "A better version of Stack Overflow",
+  description:
+    "A better version of Stack Overflow",
 };
 
 export default function RootLayout({
@@ -19,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interSans.variable} antialiased`}>{children}</body>
+      <body
+        className={`${interSans.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
