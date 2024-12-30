@@ -1,7 +1,9 @@
 const Home = () => (
-  <h1 className="flex flex-col items-center justify-center text-3xl font-black text-white">
-    Welcome to the NextJS
-  </h1>
+  <>
+    <h1 className="text-light-400 flex text-3xl font-black">
+      Welcome to the NextJS
+    </h1>
+  </>
 );
 
 export default Home;

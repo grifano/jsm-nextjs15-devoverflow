@@ -21,7 +21,7 @@ const config = [
   ...compat.extends(
     "next/core-web-vitals",
     "next/typescript",
-    "plugin:tailwindcss/recommended",
+    // "plugin:tailwindcss/recommended",
     "prettier"
   ),
   {
