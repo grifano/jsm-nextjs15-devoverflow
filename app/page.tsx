@@ -1,6 +1,6 @@
 const Home = () => (
   <>
-    <h1 className="text-light-400 flex text-3xl font-black">
+    <h1 className="flex text-3xl font-black text-light-400">
       Welcome to the NextJS
     </h1>
   </>
