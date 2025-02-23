@@ -6,6 +6,7 @@ import {
 import React from "react";
 
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const interSans = Inter({
   variable: "--font-Inter-sans",
@@ -31,11 +32,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${interSans.className} ${spaceGroteskLogo.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
