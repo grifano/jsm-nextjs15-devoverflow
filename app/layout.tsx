@@ -7,6 +7,7 @@ import React from "react";
 
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import Navbar from "@/components/navigation/navbar";
 
 const interSans = Inter({
   variable: "--font-Inter-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
           defaultTheme="system"
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
